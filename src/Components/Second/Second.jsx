@@ -14,10 +14,10 @@ const Second = () => {
       <h1>{String(clockSecond % 60).length === 1 ? "0" + (clockSecond % 60) : clockSecond % 60}</h1>
       <div className="hominsec-container__buttons">
         <button onClick={() => dispatch(changeSecond(1))}>
-          <MdArrowCircleUp size="2em" color="green" />
+          <MdArrowCircleUp  className="arrows"  size="3em" color="green" />
         </button>
         <button onClick={() => dispatch(changeSecond(-1))}>
-          <MdArrowCircleDown size="2em" color="red" />
+          <MdArrowCircleDown className="arrows"  size="3em" color="red" />
         </button>
       </div>
     </div>

@@ -19,7 +19,7 @@ const Clock = () => {
   }, []);
 
   return (
-    <div>
+    <div className="clock_main">
       <div className="clock-container">
         <div className="clock-container__hour">
           <Hour />
@@ -36,8 +36,7 @@ const Clock = () => {
       </div>
       <img src={BGIMG} />
       <div className="bg"></div>
-      <hr></hr>
-      <hr></hr>
+
     </div>
   );
 };

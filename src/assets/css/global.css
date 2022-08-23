@@ -20,6 +20,7 @@ hr{
   height:2px;
   background-color:red;
   margin-top:15px;
+  margin-bottom:15px;
   box-shadow: 2px 2px 5px black;
 }
 .bg{
@@ -31,6 +32,9 @@ hr{
   z-index: -55;
   width:100vw;
   height:100vh;
+}
+.clock_main{
+  margin-bottom: 3rem;
 }
 .clock-container{
   border-radius:50px;
@@ -66,8 +70,36 @@ hr{
 }
 .hominsec-container__buttons button{
   cursor:pointer;
-  width:75px;
-  border-radius:50px;
-  background: rgb(195,193,193);
-  background: linear-gradient(90deg, rgba(195,193,193,1) 0%, rgba(182,246,207,0.7875525210084033) 100%);
+  width:50px;
+  height: 50px;
+  border-width: 0px;
+  border-radius:50%;
+  background: #CCCCCC;
+  box-shadow: inset 9px 9px 23px #727272,
+  inset -9px -9px 23px #ffffff;
+}
+
+.arrows{
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }

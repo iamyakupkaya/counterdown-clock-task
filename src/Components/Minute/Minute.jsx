@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { changeMinute } from "../../Redux/Clock/ClockSlice";
 import { MdArrowCircleUp, MdArrowCircleDown } from "react-icons/md";
 
-
 const Minute = () => {
   //REDUX
   const clockMinute = useSelector((state) => state.clock.total);
@@ -17,10 +16,10 @@ const Minute = () => {
       </h1>
       <div className="hominsec-container__buttons">
         <button onClick={() => dispatch(changeMinute(1))}>
-          <MdArrowCircleUp size="2em" color="green" />
+          <MdArrowCircleUp className="arrows" size="3em" color="green" />
         </button>
         <button onClick={() => dispatch(changeMinute(-1))}>
-          <MdArrowCircleDown size="2em" color="red" />
+          <MdArrowCircleDown className="arrows" size="3em" color="red" />
         </button>
       </div>
     </div>
